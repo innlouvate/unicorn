@@ -25,3 +25,6 @@ RUN bundle install
 # Set the default command execute
 # where creating a new container
 CMD bundle exec rackup --port 8080 --host 0.0.0.0
+
+# Bonus task to send get request
+CMD curl http://unicornpoo.herokuapp.com/update/team3-scuzzbuckets/complete
